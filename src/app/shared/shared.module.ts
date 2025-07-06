@@ -6,8 +6,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [],
-  imports: [CommonModule, TranslateModule, FormsModule],
-  exports: [TranslateModule, FormsModule]
+    declarations: [],
+    imports: [CommonModule, TranslateModule, FormsModule],
+    exports: [TranslateModule, FormsModule]
 })
-export class SharedModule {}
+export class SharedModule { }

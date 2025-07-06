@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./page-not-found.component.scss'],
     standalone: true
 })
-export class PageNotFoundComponent implements OnInit {
-  constructor() {}
+export class PageNotFoundComponent implements OnInit
+{
+    constructor() { }
 
-  ngOnInit(): void {
-    console.log('PageNotFoundComponent INIT');
-  }
+    ngOnInit(): void
+    {
+        console.log('PageNotFoundComponent INIT');
+    }
 }

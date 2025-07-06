@@ -2,11 +2,13 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageNotFoundComponent } from './page-not-found.component';
 
-describe('PageNotFoundComponent', () => {
+describe('PageNotFoundComponent', () =>
+{
   let component: PageNotFoundComponent;
   let fixture: ComponentFixture<PageNotFoundComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(waitForAsync(() =>
+  {
     void TestBed.configureTestingModule({
       declarations: []
     })
@@ -17,7 +19,8 @@ describe('PageNotFoundComponent', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it('should create', () =>
+  {
     expect(component).toBeTruthy();
   });
 });

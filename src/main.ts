@@ -18,42 +18,43 @@ import { DetailComponent } from './app/detail/detail.component';
 // AoT requires an exported function for factories
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader => new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
-if (APP_CONFIG.production) {
-  enableProdMode();
+if (APP_CONFIG.production)
+{
+    enableProdMode();
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [
-    provideHttpClient(withInterceptorsFromDi()),
-    provideRouter([
-      {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-      },
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'detail',
-        component: DetailComponent
-      },
-      {
-        path: '**',
-        component: PageNotFoundComponent
-      }
-    ]),
-    importProvidersFrom(
-      CoreModule,
-      SharedModule,
-      TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: httpLoaderFactory,
-          deps: [HttpClient]
-        }
-      })
-    )
-  ]
+    providers: [
+        provideHttpClient(withInterceptorsFromDi()),
+        provideRouter([
+            {
+                path: '',
+                redirectTo: 'home',
+                pathMatch: 'full'
+            },
+            {
+                path: 'home',
+                component: HomeComponent
+            },
+            {
+                path: 'detail',
+                component: DetailComponent
+            },
+            {
+                path: '**',
+                component: PageNotFoundComponent
+            }
+        ]),
+        importProvidersFrom(
+            CoreModule,
+            SharedModule,
+            TranslateModule.forRoot({
+                loader: {
+                    provide: TranslateLoader,
+                    useFactory: httpLoaderFactory,
+                    deps: [HttpClient]
+                }
+            })
+        )
+    ]
 }).catch(err => console.error(err));

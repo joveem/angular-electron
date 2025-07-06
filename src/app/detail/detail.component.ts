@@ -9,12 +9,14 @@ import { TranslateModule } from '@ngx-translate/core';
     standalone: true,
     imports: [RouterLink, TranslateModule]
 })
-export class DetailComponent implements OnInit {
+export class DetailComponent implements OnInit
+{
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit(): void {
-    console.log('DetailComponent INIT');
-   }
+    ngOnInit(): void
+    {
+        console.log('DetailComponent INIT');
+    }
 
 }

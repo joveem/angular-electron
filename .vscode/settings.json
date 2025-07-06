@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#252535",
+        "titleBar.inactiveBackground": "#252535",
+        "activityBar.background": "#252545"
+    },
+    "editor.tabSize": 4,
+    "javascript.format.enable": true,
+    "liveServer.settings.port": 5501,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.referencesCodeLens.enabled": true,
+}

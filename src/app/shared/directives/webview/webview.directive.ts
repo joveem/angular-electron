@@ -4,6 +4,7 @@ import { Directive } from '@angular/core';
     selector: 'webview',
     standalone: true
 })
-export class WebviewDirective {
-  constructor() { }
+export class WebviewDirective
+{
+    constructor() { }
 }
